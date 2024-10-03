@@ -260,3 +260,7 @@ color: #37bfec !important;
     transform: translateX(-50%) translateY(-10px);
 }
 }
+
+.resume-content p{
+text-align: justify;
+}
