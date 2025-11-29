@@ -82,24 +82,32 @@
                     <i class="fa-solid fa-location-dot"></i> Novi Sad, Serbia | <i class="fa-solid fa-phone"></i> +381641250987 |
                     <i class="fa-solid fa-envelope"></i> <a href="mailto:vujadinovic01@gmail.com">vujadinovic01@gmail.com</a>
                 </div>
-                <p class="mb-5">
-                    Hello! I'm a recently graduated Software engineer with 10 months of working experience, specializing in Artificial Intelligence and Machine earning,
-                    particularly in computer vision. While I excel in Machine learning, I am continuously improving my skills in across other areas of Software engineering as well.
-                    Additionally, I have a strong interest in Computer graphics and enjoy exploring and learning about it.
-                    I thrive on collaborating with others to push the boundaries of technology and create impactful projects.
+                <div class="about-wrapper mx-auto" style="max-width: 800px;">
+        <p class="mb-0" style="text-align: justify; text-justify: inter-word;">
+                    Hello! I'm a Master’s student in the MVA program at ENS Paris-Saclay, currently based in France. 
+                    I completed my Bachelor’s degree in Software Engineering at the University of Novi Sad, Serbia. 
+                    I also have 2 years of experience working in Machine Learning for (3D) Computer Vision.<br>
+                    My main interests lie in 3D Computer Vision, geometric deep learning and 3D shape analysis, and 
+                    neural rendering techniques (NeRFs). I am also interested in Natural Language Processing, especially 
+                    where it intersects with other scientific fields-e.g., multimodal learning and vision–language models.<br>
+                    I’m passionate about research-driven development and enjoy working at the intersection of advanced 
+                    mathematics, ML theory, and practical applications.
                 </p>
-                <div class="announcement-item d-flex align-items-center mb-2" style="margin-bottom: 50px !important;">
-                    <div class="icon mr-2">
+
+                <div class="announcement-item d-flex align-items-center mt-3 mb-2 " style="margin-bottom: 20px !important;">
+                    <!-- <div class="icon mr-2">
                         <i class="fa fa-briefcase"></i>
-                    </div>
+                    </div> -->
                     <div class="text">
-                        <strong>
-                            Open for exciting opportunities in Machine learning, Data, Computer graphics &amp; Backend
-                            SWE roles.
-                        </strong>
+                        <strong>Open to Research Internship opportunities in:</strong><br>
+                        Machine Learning • Deep Learning • (3D) Computer Vision • Geometric ML • 3D Shape Analysis • Neural Rendering • NLP • Multimodal AI
                     </div>
                 </div>
-                <ul class="list-inline list-social-icons mb-0">
+            </div>
+
+
+
+                 <ul class="list-inline list-social-icons mt-3 mb-0">
                     <li class="list-inline-item">
                         <a target="_blank" rel="noopener noreferrer" href="https://rs.linkedin.com/in/nemanja-vujadinovi%C4%87-666a07276">
                             <span class="fa-stack fa-lg">
@@ -116,12 +124,14 @@
                             </span>
                         </a>
                     </li>
-                    <a target="_blank" rel="noopener noreferrer" href="https:/gitlab.com/vujadinovicn">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-gitlab fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
+                    <li class="list-inline-item">
+                        <a target="_blank" rel="noopener noreferrer" href="https://gitlab.com/vujadinovicn">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-gitlab fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -129,6 +139,83 @@
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
             <div class="my-auto">
                 <h2 class="mb-5">Experience</h2>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <div class="d-flex align-items-start">
+                            <!-- Add the image element here -->
+                            <div class="project-image-wrapper">
+                                <img src="img/onesec.jpeg" alt="Project Image" class="project-image">
+                            </div>
+                            <div>
+                                <h3 class="mb-0">Machine learning engineer</h3>
+                                <div class="subheading mb-3">OneSecondDelivery Inc</div>
+                            </div>
+                        </div>
+                        
+                        <b>Foundation Model Training and Label Generation</b>
+                        <ul class="fa-ul mb-2">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Adapted, analyzed, and used SOTA depth estimation and semantic segmentation models to generate high-quality pseudo-labels for training.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Designed an input-output foundation pipeline that combines RGB images with ~100+ channels of segmentation logits, depth maps, and synthetic stereo data.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Built a self-supervised pre-training framework using a ResNet-based student–teacher setup for drone path planning and obstacle avoidance in autonomous food delivery.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Improved model performance by replacing ResNet with a customized (for Hailo) ConvNeXt architecture.
+                            </li>
+                        </ul>
+
+                        <b>Synthetic Data Generation & Inpainting</b>
+                        <ul class="fa-ul mb-2">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Generated large-scale synthetic stereo datasets by combining central RGB frames with depth maps to simulate left–right drone camera views.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Used multiple depth estimation models (Apple metric model, Depth Anything v2) and custom fusion strategies to stabilize depth scaling for improved stereo simulation.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Collected and evaluated real stereo footage using calibrated drone cameras to benchmark and refine synthetic data quality, ensuring geometric alignment with real-world measurements.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Evaluated and adapted LaMa, DeepFill v2, and diffusion-based models for inpainting occluded regions caused by pixel displacements.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Designed, trained, and iteratively refined several CycleGAN-based inpainting architectures from scratch, achieving more realistic and consistent results on synthetic data than previously used SOTA models.
+                            </li>
+                        </ul>
+
+                        <b>MLOps & Cloud Deployment</b>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Set up and maintained an MLOps infrastructure on Google Cloud for model experimentation and data preprocessing using VertexAI and Compute Engine.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Designed and managed concurrent runs of depth and segmentation models for large-scale label generation, reducing processing time by ~35%.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Performed small-scale training and evaluation experiments to validate system stability and optimize model throughput.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Nov 2024 – Oct 2025</span>
+                    </div>
+                </div>
 
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
@@ -143,24 +230,67 @@
                             </div>
                         </div>
                         
+                        <b>Depth Estimation</b>
+                        <ul class="fa-ul mb-2">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Analyzed, processed, and annotated image and video data to create high-quality datasets for depth estimation.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Utilized COLMAP to generate ground truth depth values for images that were missing them.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Researched methods for extending single-frame depth estimation models to temporal models while maintaining low inference time.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Experimented with using optical flow to estimate and refine depth.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Focused on running and testing different models and adjusting the code to find the best balance between speed and accuracy.
+                            </li>
+                        </ul>
+
+                        <b>Field of View (FOV) Estimation</b>
+                        <ul class="fa-ul mb-2">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Built a temporally consistent FOV estimation model from scratch, achieving improved performance over previously used models.
+                                Independently led this project for ~80% of its duration.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Created a comprehensive dataset using 360-degree videos, extracting 5–10 images per frame with varied FOV, roll, pitch, and yaw parameters.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Developed and executed training scripts, experimenting with different backbones and regression heads to optimize model accuracy.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Conducted evaluations on test images from both in-distribution and out-of-distribution datasets to ensure generalizability for production use.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Improved initial models by iteratively refining datasets and addressing issues such as blur dependency, leading to successful deployment in production.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Explored a new temporal FOV approach using two models together, focusing on temporal consistency and designing an appropriate loss function.
+                            </li>
+                        </ul>
+
+                        <b>Additional Research and Development</b>
                         <ul class="fa-ul mb-0">
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Built temporary consistent <strong>field of view (FOV) estimation model</strong> from scratch achieving <strong>better results</strong> then previously used model
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Analyzed, processed and annotated image and video data to <strong>create datasets</strong> for various computer vision tasks
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Researched how to extend single frame estimation models to temporal models while keeping inference time low, mainly for <strong>depth estimation</strong>
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Engaged in <strong>camera trajectory</strong> analysis and implemented a trajectory comparison tool utilizing <strong>Python and Blender</strong>
+                                Engaged in camera trajectory analysis, developing a trajectory comparison tool using Python and Blender to enhance motion understanding.
                             </li>
                         </ul>
+
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary">Sep 2023 – July 2024</span>
@@ -171,6 +301,41 @@
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
             <div class="my-auto">
                 <h2 class="mb-5">Education</h2>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <div class="d-flex align-items-start">
+                            <div class="project-image-wrapper">
+                                <!-- Replace with your actual logo/image path -->
+                                <img src="img/ens.png" alt="ENS Paris-Saclay" class="project-image">
+                            </div>
+                            <div>
+                                <h3 class="mb-0">École Normale Supérieure Paris-Saclay</h3>
+                                <div class="subheading mb-3">M2 Master’s Degree</div>
+                            </div>
+                        </div>
+
+                        <div><strong>MVA (Mathematics, Vision &amp; Learning)</strong></div>
+
+                        <ul class="fa-ul mb-0">
+                            <li style="text-align: justify;">
+                                <i class="fa-li fa fa-certificate text-warning"></i>
+                                <strong>Courseworks:</strong> 3D Computer vision, Geometry Processing and Geometric Deep Learning, Geometric Data Analysis, Probabilistic Graphical Models and Deep Generative Models, Deep Learning, Advanced learning for text and graph data, Convex optimization
+                            </li>
+                            <li style="text-align: justify;">
+                                <i class="fa-li fa fa-certificate text-warning"></i>
+                                <strong>Other:</strong> Currently pursuing the #2 globally ranked Master’s in Mathematics (Shanghai Rankings). 
+                                The program is highly research-oriented, with every course requiring deep understanding of the underlying 
+                                mathematical theory and the ability to critically analyze, reproduce, or advance state-of-the-art research 
+                                papers across machine learning, computer vision, and applied mathematics. It strengthens my research-driven 
+                                mindset and prepares me for industry roles in applied research and advanced ML/CV development.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Sep 2025 – Present</span>
+                    </div>
+                </div>
+
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
                         <div class="d-flex align-items-start">
@@ -190,13 +355,15 @@
                         <ul class="fa-ul mb-0">
                             <li style="text-align: justify;">
                                 <i class="fa-li fa fa-certificate text-warning"></i>
-                                <strong>Courseworks:</strong> Neural networks, Sentiment analysis, Data analysis, Data compression, Sentiment Web, DevOps</li>
+                                <strong>Courseworks:</strong> Neural networks, Sentiment analysis, Data analysis, Data compression, Sentiment Web, DevOps
+                            </li>
                         </ul>
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary">Oct 2024 - present</span>
                     </div>
                 </div>
+
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
                         <div class="d-flex align-items-start">
@@ -1160,7 +1327,15 @@
                 <ul class="fa-ul mb-0">
                     <li>
                         <i class="fa-li fa fa-trophy text-warning"></i>
-                        National scholarship for exceptional students, 2017-present.
+                        Bourse de Gouvernement Français (BGF Scholarship), 2025-2026.
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-trophy text-warning"></i>
+                        Huawei Technologies Belgrade Scholarship, 2024-2025.
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-trophy text-warning"></i>
+                        National scholarship for exceptional students, 2017-2025.
                     </li>
                     <li>
                         <i class="fa-li fa fa-trophy text-warning"></i>
@@ -1173,7 +1348,7 @@
                 </ul>
             </div>
         </section>
-        <a href="resources/Resume_Kushan_Devarajegowda.pdf" download="Kushan_Devarajegowda_Resume.pdf" id="resume-download" class="floating-icon" title="Download my resume" target="_blank">
+        <a href="resources/Resume_Kushan_Devarajegowda.pdf" download="dummy.pdf" id="resume-download" class="floating-icon" title="Download my resume" target="_blank">
             <div id="popup-text" class="popup-text">Download My Resume</div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
