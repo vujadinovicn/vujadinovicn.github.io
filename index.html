@@ -82,7 +82,7 @@
                     <i class="fa-solid fa-location-dot"></i> Novi Sad, Serbia | <i class="fa-solid fa-phone"></i> +381641250987 |
                     <i class="fa-solid fa-envelope"></i> <a href="mailto:vujadinovic01@gmail.com">vujadinovic01@gmail.com</a>
                 </div>
-                <div class="about-wrapper mx-auto" style="max-width: 800px;">
+                <div class="about-wrapper mx-auto" style="max-width: 1020px;">
         <p class="mb-0" style="text-align: justify; text-justify: inter-word;">
                     Hello! I'm a Master’s student in the MVA program at ENS Paris-Saclay, currently based in France. 
                     I completed my Bachelor’s degree in Software Engineering at the University of Novi Sad, Serbia. 
@@ -144,7 +144,7 @@
                         <div class="d-flex align-items-start">
                             <!-- Add the image element here -->
                             <div class="project-image-wrapper">
-                                <img src="img/onesec.jpeg" alt="Project Image" class="project-image">
+                                <img src="img/onesec.jpeg" style="object-fit: contain;" alt="Project Image" class="project-image">
                             </div>
                             <div>
                                 <h3 class="mb-0">Machine learning engineer</h3>
@@ -222,7 +222,7 @@
                         <div class="d-flex align-items-start">
                             <!-- Add the image element here -->
                             <div class="project-image-wrapper">
-                                <img src="img/wonder.png" alt="Project Image" class="project-image">
+                                <img src="img/wonder.png" alt="Project Image" style="object-fit: cover;" class="project-image">
                             </div>
                             <div>
                                 <h3 class="mb-0">Machine learning intern/engineer</h3>
@@ -723,184 +723,293 @@
                 margin-bottom: 15px !important;
                 margin-top: 48px !important;
                 color: #868e96;">AI &amp; Machine learning</h3>
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <div class="project-image-wrapper">
-                                <img src="img/zero123.jpeg" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Zero-1-to-3: Zero-shot One Image to 3D Object</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="">www.404.com</a>
-                                </div>
+                <!-- altegrad -->
+                <div class="resume-item project-box d-flex flex-column mb-5">
+                    <div class="project-top">
+                        <div class="project-image-wrapper">
+                            <img src="img/molecule.png" style="object-fit: contain;" alt="Project Image" class="project-image">
+                        </div>
+                        <div class="project-main">
+                            <h3 class="mb-0 projtitle">
+                                Molecular Graph Captioning
+                            </h3>
+                            <div class="subheading mb-2">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/molecular-graph-captioning">
+                                    www.molecule-captioning.com
+                                </a>
                             </div>
                         </div>
+                        <div>
+                            <div class="subheading mb-2">
+                                <span class="text-primary">dec 2025 - jan 2026</span>
+                            </div>
+                            <!-- Arrow toggle -->
+                            <button class="expand-btn" type="button" style="float: right;">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
 
+                    <div class="project-expand">
                         <p style="margin-bottom: 5px;">
                             <strong>Tech stack:</strong> Python, LaTeX
                         </p>
 
                         <p>
                             <strong>Description:</strong>
-                            Project in progress as part of the MVA <em>Geometric Deep Learning</em> course. We are analyzing the paper <em>"Zero-1-to-3: Zero-shot One Image to 3D Object"</em> (Liu et al., 2023).
+                            Project in progress as part of the MVA <em>ALTEGRAD</em> course.
+                            We are building a molecular graph-to-text captioning model using a
+                            GNN encoder and Transformer decoder to generate natural language
+                            descriptions from molecular structures.
                         </p>
                     </div>
+                </div>
 
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Nov 2025</span>
+                <!-- DDPMS -->
+                <div class="resume-item project-box d-flex flex-column mb-5">
+                    <div class="project-top">
+                        <div class="project-image-wrapper">
+                            <img src="img/ddpm.webp" alt="Project Image" class="project-image">
+                        </div>
+                        <div class="project-main">
+                        <h3 class="mb-0 projtitle">
+                            Denoising Diffusion Probabilistic Models
+                        </h3>
+                        <div class="subheading mb-2">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/text2image-diffusion">www.ddpm.com</a>
+                        </div>
+                        </div>
+                        <div>
+                            <div class="subheading mb-2">
+                            <span class="text-primary">nov 2025 - dec 2025</span>
+                            </div>
+                            <!-- Arrow toggle -->
+                            <button class="expand-btn" type="button" style="float: right;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-expand">
+                        <p style="margin-bottom: 5px;">
+                        <strong>Tech stack:</strong> Python, LaTeX
+                        </p>
+
+                        <p>
+                        <strong>Description:</strong>
+                        Reproduced and extended the papers <em>"Denoising Diffusion Probabilistic Models" (Ho et al., 2020)</em> and 
+                        <em>“A Connection Between Score Matching and Denoising Autoencoders” (Vincent et al., 2011)</em>. 
+                        We implemented a unified diffusion framework that supports theoretically equivalent training objectives 
+                        (noise, mean, 𝑥0, and score / Langevin-style prediction). 
+                        Moreover, we extended the original DDPM model to learn variance and improved the negative log-likelihood (NLL) from 1.21 to 1.10 without harming sample quality.
+                        We also added Classifier-Free Guidance for conditional generation and analyzed trade-offs between diversity and sample quality.
+                        Lastly, we authored a paper reporting the link between diffusion models and score matching, deriving the objective equivalences, 
+                        and reporting our experiment setup and empirical findings on likelihood–FID–diversity results.
+                        </p>
                     </div>
                 </div>
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <div class="project-image-wrapper">
-                                <img src="img/genmodel.jpg" alt="Project Image" class="project-image">
+
+                <div class="resume-item project-box d-flex flex-column mb-5">
+                    <div class="project-top">
+                        <div class="project-image-wrapper">
+                            <img src="img/genmodel.jpg" alt="Project Image" class="project-image">
+                        </div>
+                        <div class="project-main">
+                        <h3 class="mb-0 projtitle">
+                            Score based Generative Modeling
+                        </h3>
+                        <div class="subheading mb-2">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/ScoreBasedGenerativeModels">www.ddpm.com</a>
+                        </div>
+                        </div>
+                        <div>
+                            <div class="subheading mb-2">
+                            <span class="text-primary">nov 2025 - dec 2025</span>
                             </div>
-                            <div>
-                                <h3 class="mb-0">Generative Modeling by Estimating Gradients of the Data Distribution</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Kshitij-Ambilduke/ScoreBasedGenerativeModels/tree/main">www.score-based-gen-model.com</a>
-                                </div>
+                            <!-- Arrow toggle -->
+                            <button class="expand-btn" type="button" style="float: right;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-expand">
+                        <p style="margin-bottom: 5px;">
+                        <strong>Tech stack:</strong> Python, LaTeX
+                        </p>
+
+                        <p>
+                        <strong>Description:</strong>
+                        Reproduced, analyzed and extended the paper <em>“Generative Modeling by Estimating Gradients of the Data Distribution”</em> 
+                        (Song & Ermon, 2019). We implemented the forward and reverse diffusion processes and trained an NCSN score network.
+                         We conducted experiments on discrete variance schedules (geometric, linear, square-root), 
+                         and extended the baseline method with continuous noise conditioning to demonstrate 
+                         better generalization to unseen noise levels and improvement of sample quality under 
+                         constrained sampling budgets. Additionally, we explored latent-space generation via PCA 
+                         and achieved faster convergence and significantly reduced training and sampling times. 
+                        Lastly, we authored a paper documenting our experimental results, with limitations and improvements of original method.
+                    </p>
+                    </div>
+                </div>
+
+                <!-- zero 123 -->
+                <div class="resume-item project-box d-flex flex-column mb-5">
+                    <div class="project-top">
+                        <div class="project-image-wrapper">
+                            <img src="img/zero123.jpeg" alt="Project Image" style="object-fit: contain;" class="project-image">
+                        </div>
+                        <div class="project-main">
+                            <h3 class="mb-0 projtitle">
+                                Zero-1-to-3: Zero-shot One Image to 3D Object
+                            </h3>
+                            <div class="subheading mb-2">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/zero-1-to-3-review">
+                                    www.zero123.com
+                                </a>
                             </div>
                         </div>
+                        <div>
+                            <div class="subheading mb-2">
+                                <span class="text-primary">nov 2025</span>
+                            </div>
+                            <!-- Arrow toggle -->
+                            <button class="expand-btn" type="button" style="float: right;">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
 
+                    <div class="project-expand">
                         <p style="margin-bottom: 5px;">
                             <strong>Tech stack:</strong> Python, LaTeX
                         </p>
 
                         <p>
                             <strong>Description:</strong>
-                            Project in progress as part of the MVA <em>Geometric Data Analysis</em> course. 
-                            We are reproducing and analyzing the paper 
-                            <em>“Generative Modeling by Estimating Gradients of the Data Distribution” (Song & Ermon, 2019)</em>. 
-                            So far, we implemented the forward and reverse diffusion processes as well as an NCSN-style score network, 
-                            and experimented with several noise schedules (linear, square-root, sigmoid). 
-                           Our next steps include adding additional loss functions, implementing conditional generation, and running further experiments to find the limits of the original method.
-
+                            Reviewed and presented the key ideas, results and limitations of paper
+                            <em>“Zero-1-to-3: Zero-shot One Image to 3D Object”</em> (Liu et al., 2023)
+                            as part of the MVA <em>Geometric Deep Learning</em> course.
+                            Additionally implemented a lightweight inference demo to reproduce and examine output results.
                         </p>
-                    </div>
-
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Nov 2025</span>
-                    </div>
-                </div>
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the project image here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/ddpm.webp" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Denoising Diffusion Probabilistic Models</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/text2image-diffusion">www.ddpm.com</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Python, LaTeX
-                        </p>
-
-                        <p>
-                            <strong>Description:</strong>
-                            Project in progress as a part of the MVA <em>Probabilistic Graphical Models and Deep Generative Models</em> course.
-                            We are reproducing and extending the papers 
-                            <em>"Denoising Diffusion Probabilistic Models" (Ho et al., 2020)</em> and  
-                            <em>“A Connection Between Score Matching and Denoising Autoencoders” (Vincent et al., 2011)</em>. 
-                            Up to date, we implemented the full forward noising and sampling processes and built several training losses, 
-                            including score, mean, noise, and VLB objectives. We implemented and trained a standard diffusion U-Net model, 
-                            and subsequently extended it to support learned variance alongside learned mean. Our next steps include adding conditional generation 
-                            and expanding the model to the text-to-image one.
-                        </p>
-                    </div>
-
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Nov 2025</span>
                     </div>
                 </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the project image here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/clang.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">C Code Formatting with Transformers</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/c-formatter-llm">www.c-code-formatter.com</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/clang.png" alt="Project Image" class="project-image">
+        </div>
 
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Python, Jupyter Notebook, Clang
-                        </p>
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                C Code Formatting with Transformers
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/c-formatter-llm">
+                    www.c-code-formatter.com
+                </a>
+            </div>
+        </div>
 
-                        <p>
-                            <strong>Description:</strong>
-                            Developed a transformer-based model for predicting spacing between tokens in C code that achieved 90% accuracy on the test set. 
-                            I analyzed and preprocessed the dataset of 40K segmented C functions using the Clang library to extract token spellings, token types, and spacing labels.  
-                            Moreover, I used a pretrained ALBERT backbone with an added fully connected prediction head and binary cross-entropy loss for training.  
-                            The project presents an extension of a prior research paper "<i>Learning to Format Coq Code Using Language Models</i>" by replacing n-gram and RNN 
-                            models with a transformer network, and by adapting the dataset from Coq code to C code.
-                        </p>
-                    </div>
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">Nov 2024</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
 
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Nov 2024</span>
-                    </div>
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> Python, Jupyter Notebook, Clang
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed a transformer-based model for predicting spacing between tokens in C code that achieved 90% accuracy on the test set. 
+            I analyzed and preprocessed the dataset of 40K segmented C functions using the Clang library to extract token spellings, token types, and spacing labels.  
+            Moreover, I used a pretrained ALBERT backbone with an added fully connected prediction head and binary cross-entropy loss for training.  
+            The project presents an extension of a prior research paper "<i>Learning to Format Coq Code Using Language Models</i>" by replacing n-gram and RNN 
+            models with a transformer network, and by adapting the dataset from Coq code to C code.
+        </p>
+    </div>
                 </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/chatbot.jpg" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Visual question answering</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/vqa">www.vqa.com</a>
-                                </div>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+                    <div class="project-top">
+                        <div class="project-image-wrapper" style="object-fit: cover !important;">
+                            <img src="img/chatbot.jpg" alt="Project Image" style="object-fit: cover !important;" class="project-image">
+                        </div>
+
+                        <div class="project-main">
+                            <h3 class="mb-0 projtitle">
+                                Visual question answering
+                            </h3>
+                            <div class="subheading mb-2">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/vqa">
+                                    www.vqa.com
+                                </a>
                             </div>
                         </div>
+
+                        <div>
+                            <div class="subheading mb-2">
+                                <span class="text-primary">Aug 2024</span>
+                            </div>
+                            <!-- Arrow toggle -->
+                            <button class="expand-btn" type="button" style="float: right;">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-expand">
                         <p style="margin-bottom: 5px;">
                             <strong>Tech stack:</strong> Python, Jupyter Notebook
                         </p>
+
                         <p>
                             <strong>Description:</strong>
                             Developed a discriminative Visual Question Answering model that achieved 51% accuracy on the VQA v2 dataset. I analyzed and preprocessed the dataset to match images with questions and top answers.
                             For visual embeddings, I utilized DINOv2, while BERT was used for text embeddings. Additionally, I designed and trained a classification network from scratch. This project was done during the PSIML summer school.
                         </p>
                     </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Aug 2024</span>
-                    </div>
                 </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/booking.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Accomodo</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/accomodo">www.accomodo.com</a>
-                                </div>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+                    <div class="project-top">
+                        <div class="project-image-wrapper">
+                            <img src="img/booking.png" style="object-fit: contain;" alt="Project Image" class="project-image">
+                        </div>
+
+                        <div class="project-main">
+                            <h3 class="mb-0 projtitle">
+                                Accomodo
+                            </h3>
+                            <div class="subheading mb-2">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/accomodo">
+                                    www.accomodo.com
+                                </a>
                             </div>
                         </div>
+
+                        <div>
+                            <div class="subheading mb-2">
+                                <span class="text-primary">Apr 2024 - June 2024</span>
+                            </div>
+                            <!-- Arrow toggle -->
+                            <button class="expand-btn" type="button" style="float: right;">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                                </div>
+
+                    <div class="project-expand">
                         <p style="margin-bottom: 5px;">
                             <strong>Tech stack:</strong> Java SpringBoot, Angular, Drools, GoogleMaps
                         </p>
+
                         <p>
                             <strong>Description:</strong>
                             I developed a rule-based travel accommodation recommendation system similar to Booking.com. 
@@ -908,694 +1017,887 @@
                             System supports user levels that reward booking history with various discounts. To keep the platform safe and welcoming, the system identifies and flags irresponsible or malicious users. 
                             Additionally, the system sends notifications to users, keeping them updated on discounts, new listings in their preferred areas and the status of their bookings.
                             Forward chaining and CEP were used for personalized suggestions, while the backward chaining was used for finding accomodations based on the entered location.
-                         </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Apr 2024 - June 2024</span>
+                        </p>
                     </div>
                 </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/nst.jfif" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Image style transfer</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/image-style-transfer">www.style-transfer.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Python, Jupyter Notebook, Gradio
-                        </p>
-                        <p >
-                            <strong>Description:</strong>
-                            Researched and compared image style transfer techniques using CycleGAN and Neural Style Transfer (NST). 
-                            I have implemented a CycleGAN model from scratch and utilized transfer learning on VGG-19 for NST. 
-                            The study focused on generating stylized images from portrait and landscape inputs, transforming them into Cubism and Ukiyo-e styles, respectively.
-                            The project also contains a Gradio UI app for image comparison, allowing users to visualize the differences in generated results. 
-                            The evaluation of stylized images was performed through qualitative analysis and generation time comparisons. 
-                            Results showed that NST added more artistic abstraction, 
-                            while CycleGAN preserved realism and generated images up to 25 times faster than NST.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">January 2024</span>
-                    </div>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/nst.jfif" alt="Project Image" style="object-fit: cover !important;" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                Image style transfer
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/image-style-transfer">
+                    www.style-transfer.com
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">January 2024</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> Python, Jupyter Notebook, Gradio
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Researched and compared image style transfer techniques using CycleGAN and Neural Style Transfer (NST). 
+            I have implemented a CycleGAN model from scratch and utilized transfer learning on VGG-19 for NST. 
+            The study focused on generating stylized images from portrait and landscape inputs, transforming them into Cubism and Ukiyo-e styles, respectively.
+            The project also contains a Gradio UI app for image comparison, allowing users to visualize the differences in generated results. 
+            The evaluation of stylized images was performed through qualitative analysis and generation time comparisons. 
+            Results showed that NST added more artistic abstraction, 
+            while CycleGAN preserved realism and generated images up to 25 times faster than NST.
+        </p>
+    </div>
                 </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/nn.jpg" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Age classification</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/age-classification-cnn">www.age-classification.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Python, Jupyter Notebook
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            Developed machine learning project for classifying people portraits by their age using CNN. 
-                            Alongside the binary classification, model also provides a probability score for being young.
-                            Model was trained on CelebA dataset and achieved a testing accuracy of 85.12%.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">June 2023</span>
-                    </div>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/nn.jpg" alt="Project Image" style="object-fit: cover !important;" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                Age classification 
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/age-classification-cnn">
+                    www.age-classification.com
+                </a>
+            </div>
+            
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">June 2023</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> Python, Jupyter Notebook
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed machine learning project for classifying people portraits by their age using CNN. 
+            Alongside the binary classification, model also provides a probability score for being young.
+            Model was trained on CelebA dataset and achieved a testing accuracy of 85.12%.
+        </p>
+    </div>
                 </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/reversi.jpg" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Reversi/Othello</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/reversi">www.reversi.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Python
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            Developed a Reversi/Othello game as a project for the Algorithms and Data Structures course. Project is focused 
-                            focused on tree and map data structures and implementation the Minimax algorithm with alpha-beta pruning for AI. 
-                            The game is a console application where players place disks on an 8×8 board, with human playing black and AI playing white. 
-                            The board's state is optimized using binary numbers and bitwise operations for faster disk placement, 
-                            score calculation and heuristic evaluation. Heuristics have been made by going over some details and tactics in Reversi game mainly by using internet.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">March 2021</span>
-                    </div>
-                </div>
+                
 
                 <h3 class="mb-0" style="font-size: 2em;
                 margin-bottom: 15px !important;
                 margin-top: 48px !important;
                 color: #868e96;">MVA assignments</h3>
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <div class="project-image-wrapper">
-                                <img src="img/3dcomp.jpg" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">3D Computer vision</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/MVA/tree/main/3D-Computer-Vision">www.3d.com</a>
-                                </div>
-                            </div>
+                
+                <!-- 3D Computer Vision -->
+                <div class="resume-item project-box d-flex flex-column mb-5">
+
+                    <div class="project-top">
+                    <div class="project-image-wrapper">
+                        <img src="img/3dcomp.jpg" alt="Project Image" class="project-image">
+                    </div>
+
+                    <div class="project-main">
+                        <h3 class="mb-0 projtitle">
+                        3D Computer vision
+                        </h3>
+                        <div class="subheading mb-2">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/MVA/tree/main/3D-Computer-Vision">
+                                    www.3d-vision.com
+                                </a>
                         </div>
 
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> C++, ImagineLib
-                        </p>
-
-                       <p>
-                            <strong>Description:</strong>
-                            A series of practical assignments covering core topics in 3D Computer Vision:
-                        </p>
-                        <ol style="margin-top: -15px;">
-                            <li>
-                                Implemented panorama stitching from two images by collecting point correspondences, estimating the homography, warping one image, and producing a final panorama.
-                            </li>
-                            <li>
-                                Estimated the fundamental matrix between two views using SIFT keypoint matching and RANSAC (8-point algorithm), with interactive visualization of epipolar lines.
-                            </li>
-                            <li>
-                                Computed dense disparity maps using normalized cross-correlation (NCC), selected high-confidence “seed” pixels, propagated disparities to neighbors, and visualized a reconstructed 3D point cloud.
-                            </li>
-                            <li>
-                                Implemented graph-cut–based disparity estimation with a ZNCC data term and smoothness regularization, extracted the final disparity map from the min-cut and rendered a 3D mesh from it.
-                            </li>
-                        </ol>
-
                     </div>
 
-                    <div class="resume-date text-md-right">
+                    <div>
+                        <div class="subheading mb-2">
                         <span class="text-primary">Sep 2025 - Nov 2025</span>
-                    </div>
-                </div>
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <div class="project-image-wrapper">
-                                <img src="img/mesh.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Geometry Processing and Geometric Deep Learning</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/MVA/tree/main/GDL">www.GDL.com</a>
-                                </div>
-                            </div>
                         </div>
-
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Python, Jupyter Notebook
-                        </p>
-
-                        <p>
-                            <strong>Description:</strong>
-                            A series of practical assignments covering topics in Geometric Deep Learning and Shape Analysis:
-                        </p>
-                        <ol style="margin-top: -15px">
-                            <li>
-                                Analyzed and implemented surface deformation methods, including surface parameterization (Tutte embedding, Least square conformal map) and surface alignment using ICP and ARAP.
-                            </li>
-                            <li>
-                                Implemented RNA surface segmentation using DiffusionNet with comparison of different architectural modules and input features (XYZ, HKS, WKS).
-                            </li>
-                            <li>
-                                Reproduced the code of <em>"Neural Implicit Surface Evolution"</em> paper (Novello et&nbsp;al., 2023) by implementing the implicit shape interpolation via temporal signed distance functions and the level-set equation for circle-to-square interpolation. 
-                            </li>
-
-                        </ol>
+                        <!-- Arrow toggle -->
+                        <button class="expand-btn" type="button" style="float: right;">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        </button>
+                    </div>
                     </div>
 
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Sep 2025 - Nov 2025</span>
+                    <div class="project-expand">
+                    <p style="margin-bottom: 5px;">
+                        <strong>Tech stack:</strong> C++, ImagineLib
+                    </p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        A series of practical assignments covering core topics in 3D Computer Vision:
+                    </p>
+
+                    <ol>
+                        <li>
+                        Implemented panorama stitching from two images by collecting point correspondences, estimating the homography,
+                        warping one image, and producing a final panorama.
+                        </li>
+                        <li>
+                        Estimated the fundamental matrix between two views using SIFT keypoint matching and RANSAC (8-point algorithm),
+                        with interactive visualization of epipolar lines.
+                        </li>
+                        <li>
+                        Computed dense disparity maps using normalized cross-correlation (NCC), selected high-confidence “seed” pixels,
+                        propagated disparities to neighbors, and visualized a reconstructed 3D point cloud.
+                        </li>
+                        <li>
+                        Implemented graph-cut–based disparity estimation with a ZNCC data term and smoothness regularization, extracted
+                        the final disparity map from the min-cut and rendered a 3D mesh from it.
+                        </li>
+                    </ol>
                     </div>
+
                 </div>
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <div class="project-image-wrapper">
-                                <img src="img/nlp.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Advanced learning for text and graph data</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/MVA/tree/main/ALTEGRAD">www.ALTEGRAD.com</a>
-                                </div>
-                            </div>
+
+
+                <!-- Geometry Processing and Geometric Deep Learning -->
+                <div class="resume-item project-box d-flex flex-column mb-5">
+
+                    <div class="project-top">
+                    <div class="project-image-wrapper">
+                        <img src="img/mesh.png" alt="Project Image" class="project-image">
+                    </div>
+
+                    <div class="project-main">
+                        <h3 class="mb-0 projtitle">
+                        Geometry Processing and Geometric Deep Learning
+                        </h3>
+                        <div class="subheading mb-2">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/MVA/tree/main/GDL">
+                                    www.gdl.com
+                                </a>
                         </div>
-
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Python, Jupyter Notebook
-                        </p>
-
-                        <p>
-                            <strong>Description:</strong>
-                            A series of practical assignments covering core topics in text and graph data:
-                        </p>
-                        <ol style="margin-top: -15px">
-                            <li>
-                                Implemented an neural machine translation model based on a seq2seq attention architecture 
-                                with stacked RNNs for English to French translation task.
-                            </li>
-                            <li>
-                                Implemented supervised fine-tuning of large language models on question-answering task by adapting <em>Qwen2-0.5B</em> with LoRA and quantization.
-                            </li>
-                            <li>
-                                Explored post-training with reinforcement learning from human feedback (RLHF); Implemented
-                                Direct Preference Optimization (DPO) and Group Relative Policy Optimization (GRPO) on preference-based datasets
-                                to observe and analyze changes in model behavior.
-                            </li>
-                            <li>
-                                Analyzed graph networks using basic graph mining techniques, performed community detection with spectral clustering, and implemented graph classification using graph kernels on the MUTAG dataset.
-                            </li>
-                            <li>
-                                Worked on distillation and retrieval-augmented generation (RAG) by first performing white-box distillation to specialize a model for Wikipedia QA, then building a full RAG pipeline including vector database construction, embedding-based document retrieval, and integration of retrieved context into the generation process.
-                            </li>
-                            <li>
-                                Implemented DeepWalk and a supervised Graph neural network (GNN) for node classification on the Karate dataset and compared their performance.
-                            </li>
-
-
-                        </ol>
-
                     </div>
 
-                    <div class="resume-date text-md-right">
+                    <div>
+                        <div class="subheading mb-2">
                         <span class="text-primary">Sep 2025 - Nov 2025</span>
+                        </div>
+                        <!-- Arrow toggle -->
+                        <button class="expand-btn" type="button" style="float: right;">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        </button>
                     </div>
+                    </div>
+
+                    <div class="project-expand">
+                    <p style="margin-bottom: 5px;">
+                        <strong>Tech stack:</strong> Python, Jupyter Notebook
+                    </p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        A series of practical assignments covering topics in Geometric Deep Learning and Shape Analysis:
+                    </p>
+
+                    <ol>
+                        <li>
+                        Analyzed and implemented surface deformation methods, including surface parameterization (Tutte embedding,
+                        Least square conformal map) and surface alignment using ICP and ARAP.
+                        </li>
+                        <li>
+                        Implemented RNA surface segmentation using DiffusionNet with comparison of different architectural modules and
+                        input features (XYZ, HKS, WKS).
+                        </li>
+                        <li>
+                        Reproduced the code of <em>"Neural Implicit Surface Evolution"</em> paper (Novello et&nbsp;al., 2023) by implementing
+                        the implicit shape interpolation via temporal signed distance functions and the level-set equation for circle-to-square interpolation.
+                        </li>
+                    </ol>
+                    </div>
+
                 </div>
-               
 
 
+                <!-- Advanced Learning for Text and Graph Data -->
+                <div class="resume-item project-box d-flex flex-column mb-5">
+
+                    <div class="project-top">
+                    <div class="project-image-wrapper">
+                        <img src="img/nlp.png" alt="Project Image" style="object-fit: contain;" class="project-image">
+                    </div>
+
+                    <div class="project-main">
+                        <h3 class="mb-0 projtitle">
+                        Advanced learning for text and graph data
+                        </h3>
+                        <div class="subheading mb-2">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/MVA/tree/main/ALTEGRAD">
+                                    www.altegrad.com
+                                </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="subheading mb-2">
+                        <span class="text-primary">Sep 2025 - Nov 2025</span>
+                        </div>
+                        <!-- Arrow toggle -->
+                        <button class="expand-btn" type="button" style="float: right;">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        </button>
+                    </div>
+                    </div>
+
+                    <div class="project-expand">
+                    <p style="margin-bottom: 5px;">
+                        <strong>Tech stack:</strong> Python, Jupyter Notebook
+                    </p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        A series of practical assignments covering core topics in text and graph data:
+                    </p>
+
+                    <ol>
+                        <li>
+                        Implemented an neural machine translation model based on a seq2seq attention architecture
+                        with stacked RNNs for English to French translation task.
+                        </li>
+                        <li>
+                        Implemented supervised fine-tuning of large language models on question-answering task by adapting <em>Qwen2-0.5B</em>
+                        with LoRA and quantization.
+                        </li>
+                        <li>
+                        Explored post-training with reinforcement learning from human feedback (RLHF); Implemented Direct Preference Optimization (DPO)
+                        and Group Relative Policy Optimization (GRPO) on preference-based datasets to observe and analyze changes in model behavior.
+                        </li>
+                        <li>
+                        Analyzed graph networks using basic graph mining techniques, performed community detection with spectral clustering,
+                        and implemented graph classification using graph kernels on the MUTAG dataset.
+                        </li>
+                        <li>
+                        Worked on distillation and retrieval-augmented generation (RAG) by first performing white-box distillation to specialize a model
+                        for Wikipedia QA, then building a full RAG pipeline including vector database construction, embedding-based document retrieval,
+                        and integration of retrieved context into the generation process.
+                        </li>
+                        <li>
+                        Implemented DeepWalk and a supervised Graph neural network (GNN) for node classification on the Karate dataset and compared their performance.
+                        </li>
+                    </ol>
+                    </div>
+
+                </div>
 
                 <h3 class="mb-0" style="font-size: 2em;
                 margin-bottom: 15px !important;
                 margin-top: 48px !important;
                 color: #868e96;">Web, mobile &amp; app development</h3>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/smarthome1.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">La Casa de Smart</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://gitlab.com/vujadinovicn/nvt">www.lacasadesmart.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> C# .NET, Angular, Python, Flask, InfluxDB, MQTT, Telegraf, NGINX, Locust
-                        </p>
-                        <p >
-                            <strong>Description:</strong>
-                            Developed a cloud-based software solution for monitoring smart homes within smart cities. 
-                            The platform allows users to control and monitor smart devices in real-time, including sensors for temperature, humidity, and electricity consumption, as well as devices with manual or automated commands. 
-                            These smart devices were simulated using Python scripts, with their generated data stored in InfluxDB. 
-                            Communication between devices and the system was facilitated through the MQTT protocol and Telegraf. 
-                            NGINX was used as a reverse proxy and for serving frontend and image data. 
-                            To ensure scalability, performance and load tests were conducted using Locust, simulating multiple simultaneous users and a large number of devices.
-                        </p>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+                <div class="project-top">
+                    <div class="project-image-wrapper">
+                        <img src="img/smarthome1.png" alt="Project Image" class="project-image">
                     </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Dec 2023 - June 2024</span>
+
+                    <div class="project-main">
+                        <h3 class="mb-0 projtitle">
+                            La Casa de Smart
+                        </h3>
+                        <div class="subheading mb-2">
+                            <a target="_blank" rel="noopener noreferrer" href="https://gitlab.com/vujadinovicn/nvt">www.lacasadesmart.com</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="subheading mb-2">
+                            <span class="text-primary">Dec 2023 - June 2024</span>
+                        </div>
+                        <!-- Arrow toggle -->
+                        <button class="expand-btn" type="button" style="float: right;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </button>
                     </div>
                 </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/smarthome2.jpg" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Smart home</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/iot-home">www.smarthome.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Python, Flask, Angular, InfluxDB, MQTT, Grafana
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            Developed a web application for real-time monitoring of both simulated and physical devices connected to a Raspberry Pi, 
-                            including a buzzer, button, membrane switch, LED diode, DHT sensor, PIR sensor, LCD display, and DUS sensor. 
-                            Communication between devices was established via MQTT, with data stored in InfluxDB and visualized through Grafana. 
-                            We implemented an alarm system that activates based on sensor input (e.g., PIR and DUS sensors), 
-                            which monitors motion and determines entry or exit, triggering the alarm under specific conditions. 
-                            Alarm events are logged and visualized, and users are notified via the web application. 
-                            The system also includes features such as a PIN-based alarm deactivation, environmental monitoring (temperature and humidity),
-                            and control of RGB lights and a buzzer alarm via both the web interface and remote sensors.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Dec 2023 - Jan 2024</span>
-                    </div>
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> C# .NET, Angular, Python, Flask, InfluxDB, MQTT, Telegraf, NGINX, Locust
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed a cloud-based software solution for monitoring smart homes within smart cities. 
+            The platform allows users to control and monitor smart devices in real-time, including sensors for temperature, humidity, and electricity consumption, as well as devices with manual or automated commands. 
+            These smart devices were simulated using Python scripts, with their generated data stored in InfluxDB. 
+            Communication between devices and the system was facilitated through the MQTT protocol and Telegraf. 
+            NGINX was used as a reverse proxy and for serving frontend and image data. 
+            To ensure scalability, performance and load tests were conducted using Locust, simulating multiple simultaneous users and a large number of devices.
+        </p>
+    </div>
                 </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/drive.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Cloud drive system</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/cloud">www.cloud.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> AWS, Angular, Python
-                        </p>
-                        <p >
-                            <strong>Description:</strong>
-                            Developed a Google Drive-inspired web application for organizing and storing image, video, .txt and PDF files using AWS cloud services.
-                            Users can upload, download, and delete content, create photo albums and share files with others. 
-                            The project utilizes AWS S3 for data storage, DynamoDB for file organization, Cognito for user authentication and API gateway for requests handling.
-                            The system is designed to ensure data consistency and employs IaC for service configuration.
 
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Apr 2023 - June 2023</span>
-                    </div>
-                </div>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/smarthome2.jpg" alt="Project Image" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                Smart home
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/iot-home">www.smarthome.com</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">Dec 2023 - Jan 2024</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> Python, Flask, Angular, InfluxDB, MQTT, Grafana
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed a web application for real-time monitoring of both simulated and physical devices connected to a Raspberry Pi, 
+            including a buzzer, button, membrane switch, LED diode, DHT sensor, PIR sensor, LCD display, and DUS sensor. 
+            Communication between devices was established via MQTT, with data stored in InfluxDB and visualized through Grafana. 
+            We implemented an alarm system that activates based on sensor input (e.g., PIR and DUS sensors), 
+            which monitors motion and determines entry or exit, triggering the alarm under specific conditions. 
+            Alarm events are logged and visualized, and users are notified via the web application. 
+            The system also includes features such as a PIN-based alarm deactivation, environmental monitoring (temperature and humidity),
+            and control of RGB lights and a buzzer alarm via both the web interface and remote sensors.
+        </p>
+    </div>
+</div>
+
+
+                <div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/drive.png" alt="Project Image" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                Cloud drive system
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/cloud">www.cloud.com</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">Apr 2023 - June 2023</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> AWS, Angular, Python
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed a Google Drive-inspired web application for organizing and storing image, video, .txt and PDF files using AWS cloud services.
+            Users can upload, download, and delete content, create photo albums and share files with others. 
+            The project utilizes AWS S3 for data storage, DynamoDB for file organization, Cognito for user authentication and API gateway for requests handling.
+            The system is designed to ensure data consistency and employs IaC for service configuration.
+        </p>
+    </div>
+</div>
 
                 
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/hopin.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">HopIn</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/HopIn_back ">www.hopin-back.com</a>,
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/HopIn_front">www.hopin-front.com</a>,
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/HopIn_mobile">www.hopin-mobile.com</a>,
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/HopIn_selenium">www.hopin-testing.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Java SpringBoot, Java AndroidStudio, Angular, Python, Selenium, TestNG
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            Developed Uber-like full stack application for taxi services. 
-                            Backend was implemented in Spring Boot supporting CRUD operations, web sockets and scheduled methods, following the MVC pattern.
-                            Created the frontend in Angular and a mobile frontend for Android using Java AndroidStudio. 
-                            Implemented real-time notifications for ride status changes and features like ride scheduling,
-                            multi-destination support, and driver/passenger ratings. Additionally, project included
-                            a real-time simulation in Python of cars driving and picking up passengers on Google Maps, 
-                            using the Google Maps API for location tracking. System supported live support/chat between passengers, drivers and admins.
-                            Whole system was covered with unit testing
-                            using TestNG and system testing with Selenium. 
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Nov 2022 - Feb 2023</span>
-                    </div>
-                </div>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/hopin.png" alt="Project Image" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                HopIn
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/HopIn_back ">www.hopin-back.com</a>,
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/HopIn_front">www.hopin-front.com</a>,
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/HopIn_mobile">www.hopin-mobile.com</a>,
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/HopIn_selenium">www.hopin-testing.com</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">Nov 2022 - Feb 2023</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> Java SpringBoot, Java AndroidStudio, Angular, Python, Selenium, TestNG
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed Uber-like full stack application for taxi services. 
+            Backend was implemented in Spring Boot supporting CRUD operations, web sockets and scheduled methods, following the MVC pattern.
+            Created the frontend in Angular and a mobile frontend for Android using Java AndroidStudio. 
+            Implemented real-time notifications for ride status changes and features like ride scheduling,
+            multi-destination support, and driver/passenger ratings. Additionally, project included
+            a real-time simulation in Python of cars driving and picking up passengers on Google Maps, 
+            using the Google Maps API for location tracking. System supported live support/chat between passengers, drivers and admins.
+            Whole system was covered with unit testing
+            using TestNG and system testing with Selenium. 
+        </p>
+    </div>
+</div>
+
                 
                 <h3 class="mb-0" style="font-size: 2em;
                 margin-bottom: 15px !important;
                 margin-top: 48px !important;
                 color: #868e96;">Security</h3>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/zanzibar.jfif" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Mini zanzibar</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/madagascar">www.mini-zanzibar.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Java SpringBoot, Flask, Angular
-                        </p>
-                        <p >
-                            <strong>Description:</strong>
-                            Developed a simplified version of Google's Zanzibar system, providing a flexible configuration language for access control policies,
-                            evaluating access control lists (ACLs) and 
-                            ensuring consistent, scalable and low-latency authorization decisions. Google's LevelDB was used for storing ACLs, while ConsulDB was used
-                            for managing namespace configurations. The system was analyzed following the OWASP Standard. Furthermore, we have established a threat model 
-                            and performed static code analysis on our software.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">June 2024</span>
-                    </div>
-                </div>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/zanzibar.jfif" alt="Project Image" class="project-image">
+        </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/x509.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Certificate manager</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/IB_certificate_manager">www.certificates.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Java SpringBoot, Angular
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            Developed web application for the creation and manipulation of X509 certificates, operating within the HTTPS protocol.
-                            System supports security features such as two-factor authentication (2FA), ReCAPTCHA, and OAuth for enhanced user authentication.
-                            Additionally, system provides password recovery and rotation through SMS and Email services.
-                            Special emphasis was placed on protecting sensitive data and preventing common security vulnerabilities like XSS, injection and path traversal attacks.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Apr 2023 - June 2023</span>
-                    </div>
-                </div>
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                Mini zanzibar
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/madagascar">www.mini-zanzibar.com</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">June 2024</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> Java SpringBoot, Flask, Angular
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed a simplified version of Google's Zanzibar system, providing a flexible configuration language for access control policies,
+            evaluating access control lists (ACLs) and 
+            ensuring consistent, scalable and low-latency authorization decisions. Google's LevelDB was used for storing ACLs, while ConsulDB was used
+            for managing namespace configurations. The system was analyzed following the OWASP Standard. Furthermore, we have established a threat model 
+            and performed static code analysis on our software.
+        </p>
+    </div>
+</div>
+
+
+                <div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/x509.png" alt="Project Image" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                Certificate manager
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/IB_certificate_manager">www.certificates.com</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">Apr 2023 - June 2023</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> Java SpringBoot, Angular
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed web application for the creation and manipulation of X509 certificates, operating within the HTTPS protocol.
+            System supports security features such as two-factor authentication (2FA), ReCAPTCHA, and OAuth for enhanced user authentication.
+            Additionally, system provides password recovery and rotation through SMS and Email services.
+            Special emphasis was placed on protecting sensitive data and preventing common security vulnerabilities like XSS, injection and path traversal attacks.
+        </p>
+    </div>
+</div>
+
 
                 <h3 class="mb-0" style="font-size: 2em;
                 margin-bottom: 15px !important;
                 margin-top: 48px !important;
                 color: #868e96;">Computer graphics</h3>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/3dopengl.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">3D Louvre exhibition</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/3d-exhibition-opengl">www.3d-exhibition.com</a>,
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> C++, OpenGL, GLFW
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            I developed a 3D application that simulates a room in the Louvre, extending my previous 2D project.
-                            Paintings, which are placed on only one wall, are visible only with UV lamp. 
-                            I implemented a UV lamp that follows the camera’s position and orientation, emitting a purple light to enhance the atmosphere.
-                            For navigation, I created a first-person perspective camera set at a human-like height, 
-                            enabling movement in all directions while preventing it from passing through walls. 
-                            The camera can rotate vertically and horizontally, utilizing a perspective projection to ensure full scene visibility 
-                            and incorporating zoom functionality. I also implemented depth testing and back face culling for 
-                            better rendering efficiency. Additionally, I integrated both Gouraud and Phong shading, 
-                            allowing users to toggle between the two shading techniques. 
-                            I added a point light switch on the floor that activates a yellow light to illuminate the entire room, 
-                            which operates only when the camera is in close proximity. 
-                            A white spotlight on the ceiling, directed at the wall with moving images, is always active and is represented by a lamp mesh model. 
-                            The walls, ceiling and floor are implemented as diffuse and specular maps.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Jan 2024</span>
-                    </div>
-                </div>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/3dopengl.png" alt="Project Image" class="project-image">
+        </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/2dopengl.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">2D Louvre exhibition</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/2d-exhibition-opengl">www.2d-exhibition.com</a>,
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> C++, OpenGL, GLFW
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            Developed 2D visual representation of a wall in the Louvre with four paintings framed on it. Wall also contains button and progress bar.
-                            Each frame moves along its unique circular path.
-                            Simulating a button click changes the wall's color and resets the positions of the frames. By increasing or decreasing the progress bar's fill, the frames can move faster or slower.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Dec 2023</span>
-                    </div>
-                </div>
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                3D Louvre exhibition
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/3d-exhibition-opengl">www.3d-exhibition.com</a>
+            </div>
+        </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/curling.jpg" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">2D Curling</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/2d-curling">www.2d-curling.com</a>,
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=SW-28sZb-ZY">www.youtube.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Python, PyQT5, Pygame
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            Developed a 2D simulation of a curling game. Main focus of this project was the simulation of physics-based interactions between stones themselves and the court.
-                            The project employs numerical methods such as the Euler method for motion and the RK4N method for solving Newton’s second law.
-                            Collision detection uses distance comparisons and a sweep-and-prune algorithm to optimize performance. Users can customize game parameters such as stone mass and friction coefficient which directly 
-                            influence the behavior and motion of the stones during the simulation.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Jan 2022 - Feb 2022</span>
-                    </div>
-                </div>
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">Jan 2024</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> C++, OpenGL, GLFW
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            I developed a 3D application that simulates a room in the Louvre, extending my previous 2D project.
+            Paintings, which are placed on only one wall, are visible only with UV lamp. 
+            I implemented a UV lamp that follows the camera’s position and orientation, emitting a purple light to enhance the atmosphere.
+            For navigation, I created a first-person perspective camera set at a human-like height, 
+            enabling movement in all directions while preventing it from passing through walls. 
+            The camera can rotate vertically and horizontally, utilizing a perspective projection to ensure full scene visibility 
+            and incorporating zoom functionality. I also implemented depth testing and back face culling for 
+            better rendering efficiency. Additionally, I integrated both Gouraud and Phong shading, 
+            allowing users to toggle between the two shading techniques. 
+            I added a point light switch on the floor that activates a yellow light to illuminate the entire room, 
+            which operates only when the camera is in close proximity. 
+            A white spotlight on the ceiling, directed at the wall with moving images, is always active and is represented by a lamp mesh model. 
+            The walls, ceiling and floor are implemented as diffuse and specular maps.
+        </p>
+    </div>
+</div>
+
+<div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/2dopengl.png" alt="Project Image" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                2D Louvre exhibition
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/2d-exhibition-opengl">www.2d-exhibition.com</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">Dec 2023</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> C++, OpenGL, GLFW
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed 2D visual representation of a wall in the Louvre with four paintings framed on it. Wall also contains button and progress bar.
+            Each frame moves along its unique circular path.
+            Simulating a button click changes the wall's color and resets the positions of the frames. By increasing or decreasing the progress bar's fill, the frames can move faster or slower.
+        </p>
+    </div>
+</div>
+
+<div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/curling.jpg" alt="Project Image" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                2D Curling
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/2d-curling">www.2d-curling.com</a>,
+                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=SW-28sZb-ZY">www.youtube.com</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">Jan 2022 - Feb 2022</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> Python, PyQT5, Pygame
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed a 2D simulation of a curling game. Main focus of this project was the simulation of physics-based interactions between stones themselves and the court.
+            The project employs numerical methods such as the Euler method for motion and the RK4N method for solving Newton’s second law.
+            Collision detection uses distance comparisons and a sweep-and-prune algorithm to optimize performance. Users can customize game parameters such as stone mass and friction coefficient which directly 
+            influence the behavior and motion of the stones during the simulation.
+        </p>
+    </div>
+</div>
+
+
 
                 <h3 class="mb-0" style="font-size: 2em;
                 margin-bottom: 15px !important;
                 margin-top: 48px !important;
                 color: #868e96;">Other</h3>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/hpc.jfif" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">High performance computing on 2D convolutions</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/2d-convolution-hpc">www.2d-convolution-hpc.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> Python, Rust
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            The project is centered around a simplified 2D convolutional operation, where the convolutional block consists of a convolutional layer, 
-                            an activation function and concludes with a max pooling layer. The main focus of this project was the implementation of both sequential
-                            and parallel versions of the convolution operation in Python and Rust, along with a comparative analysis of their performance.
-                            Solutions were evaluated and compared through weak and strong scaling experiments in both languages, using Amdahl's and Gustafson's laws.
-                            The visualization of results was implemented using Plotters library in Rust. The animation of convolutional operation was implemented using matrix-dispay library in Rust.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">June 2024 - July 2024</span>
-                    </div>
-                </div>
+                <div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/hpc.jfif" alt="Project Image" class="project-image">
+        </div>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/scada.jfif" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">SCADA</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/SCADA">www.scada.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> C# .NET
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            Developed a general SCADA management system for a university course, incorporating four key components: 
-                            RTU client (C# console app), SCADA core (multi-threaded ASP.NET backend), Angular frontend, and SQLite database.
-                            The frontend enables real-time monitoring, database management and report generation. 
-                            Real-time tag updates and alarm notifications are sent via web-socket connections,
-                            while CRUD operations are performed on input and output tags.
-                            The project simulates core SCADA management principles, including tag monitoring, scan times, and alarm notifications.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">July 2023</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/edge.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Edge detection</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/edge-detection">www.edge-detection.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> C++
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            Implemented edge detection algorithms using the Prewitt operator in serial and parallel versions with the help of the TBB (Threading Building Blocks) library. 
-                            The program reads an image in a raw bitmap format, applies the selected edge detection algorithm, and outputs the results as filtered images.
-                            The project's efficiency is evaluated by measuring execution time across different scenarios, showcasing the benefits of parallel processing in image processing tasks.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">June 2022</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <div class="d-flex align-items-start">
-                            <!-- Add the image element here -->
-                            <div class="project-image-wrapper">
-                                <img src="img/cassandra.png" alt="Project Image" class="project-image">
-                            </div>
-                            <div>
-                                <h3 class="mb-0">Key-value storage</h3>
-                                <div class="subheading mb-3">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/Key-Value-Engine">www.key-value-storage.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-bottom: 5px;">
-                            <strong>Tech stack:</strong> GoLang
-                        </p>
-                        <p>
-                            <strong>Description:</strong>
-                            Developed a NoSQL key-value engine for big data inspired by the principles of Cassandra's NoSQL database architecture. 
-                            Idea of this project was to implement algorithms and data structures in Golang and create console application for CRUD operations on pairs of key-value.
-                            For data manipulation, we applied a diverse set of algorithms including LRU cache, LSM tree, Memtable, Merkle tree, Write-ahead log and others.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Jan 2022 - Feb 2022</span>
-                    </div>
-                </div>
-
-                
-
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                High performance computing on 2D convolutions
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/2d-convolution-hpc">www.2d-convolution-hpc.com</a>
             </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">June 2024 - July 2024</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> Python, Rust
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            The project is centered around a simplified 2D convolutional operation, where the convolutional block consists of a convolutional layer, 
+            an activation function and concludes with a max pooling layer. The main focus of this project was the implementation of both sequential
+            and parallel versions of the convolution operation in Python and Rust, along with a comparative analysis of their performance.
+            Solutions were evaluated and compared through weak and strong scaling experiments in both languages, using Amdahl's and Gustafson's laws.
+            The visualization of results was implemented using Plotters library in Rust. The animation of convolutional operation was implemented using matrix-dispay library in Rust.
+        </p>
+    </div>
+</div>
+
+<div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/scada.jfif" alt="Project Image" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                SCADA
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/SCADA">www.scada.com</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">July 2023</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> C# .NET
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed a general SCADA management system for a university course, incorporating four key components: 
+            RTU client (C# console app), SCADA core (multi-threaded ASP.NET backend), Angular frontend, and SQLite database.
+            The frontend enables real-time monitoring, database management and report generation. 
+            Real-time tag updates and alarm notifications are sent via web-socket connections,
+            while CRUD operations are performed on input and output tags.
+            The project simulates core SCADA management principles, including tag monitoring, scan times, and alarm notifications.
+        </p>
+    </div>
+</div>
+
+<div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/edge.png" alt="Project Image" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                Edge detection
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/edge-detection">www.edge-detection.com</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">June 2022</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> C++
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Implemented edge detection algorithms using the Prewitt operator in serial and parallel versions with the help of the TBB (Threading Building Blocks) library. 
+            The program reads an image in a raw bitmap format, applies the selected edge detection algorithm, and outputs the results as filtered images.
+            The project's efficiency is evaluated by measuring execution time across different scenarios, showcasing the benefits of parallel processing in image processing tasks.
+        </p>
+    </div>
+</div>
+
+<div class="resume-item project-box d-flex flex-column mb-5">
+    <div class="project-top">
+        <div class="project-image-wrapper">
+            <img src="img/cassandra.png" alt="Project Image" style="object-fit: contain;" class="project-image">
+        </div>
+
+        <div class="project-main">
+            <h3 class="mb-0 projtitle">
+                Key-value storage
+            </h3>
+            <div class="subheading mb-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/Key-Value-Engine">www.key-value-storage.com</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="subheading mb-2">
+                <span class="text-primary">Jan 2022 - Feb 2022</span>
+            </div>
+            <!-- Arrow toggle -->
+            <button class="expand-btn" type="button" style="float: right;">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="project-expand">
+        <p style="margin-bottom: 5px;">
+            <strong>Tech stack:</strong> GoLang
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            Developed a NoSQL key-value engine for big data inspired by the principles of Cassandra's NoSQL database architecture. 
+            Idea of this project was to implement algorithms and data structures in Golang and create console application for CRUD operations on pairs of key-value.
+            For data manipulation, we applied a diverse set of algorithms including LRU cache, LSM tree, Memtable, Merkle tree, Write-ahead log and others.
+        </p>
+    </div>
+</div>
+
+
         </section>
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
@@ -1625,7 +1927,9 @@
                 </ul>
             </div>
         </section>
-        <a href="resources/Resume_Kushan_Devarajegowda.pdf" download="dummy.pdf" id="resume-download" class="floating-icon" title="Download my resume" target="_blank">
+
+
+        <a href="resources/.pdf" download="dummy.pdf" id="resume-download" class="floating-icon" title="Download my resume" target="_blank">
             <div id="popup-text" class="popup-text">Download My Resume</div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1645,6 +1949,25 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <link rel="stylesheet" href="css/resume.css">
+    <script src="js/resume.js"></script>
+
+    <script>
+    document.addEventListener("click", function (e) {
+        const btn = e.target.closest(".expand-btn");
+        if (!btn) return;
+
+        console.log("CLICKED ✅");
+
+        const card = btn.closest(".project-box");
+        if (!card) return;
+
+        card.classList.toggle("expanded");
+    });
+</script>
+
+
 
 </body>
 

@@ -223,10 +223,11 @@ a:hover {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
+    width: 20%;
 }
 
 .project-image {
-    width: 65px;
+    width: 100%;
     height: 65px;
     object-fit: cover;
     border-radius: 5px;
@@ -263,4 +264,266 @@ color: #37bfec !important;
 
 .resume-content p{
 text-align: justify;
+}
+.project-card {
+  border-radius: 18px;
+  background: #fff;
+  border: 2px solid #37bfec;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 30px rgba(0,0,0,0.10);
+}
+
+.project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+.project-meta {
+  text-align: center;
+  padding: 2px 4px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.project-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a73e8;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project-date,
+.project-tech {
+  font-size: 13px;
+  opacity: 0.75;
+  margin: 4px 0;
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+    margin-left: 20px;
+margin-right: 20px;
+}
+
+@media (max-width: 1000px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-details {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.35s ease;
+  padding: 0 18px;
+}
+
+.project-card.expanded .project-details {
+  max-height: 500px;
+  opacity: 1;
+  padding: 0 18px 18px 18px;
+}
+
+
+.project-box {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 12px !important;
+}
+
+.project-box .resume-date {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+
+.projects-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  flex: 1 1 calc(50% - 20px);  /* two per row */
+  border: 2px dashed #37bfec;  /* replace with your blue */
+  border-radius: 12px;
+  padding: 10px 18px;
+  padding-bottom: 6px;
+  background: white;
+}
+
+.project-box {
+    a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+    }
+}
+
+.projtitle a {
+  color: inherit;          /* looks like normal title */
+  text-decoration: none;   /* no underline */
+  display: inline-block;   /* makes hover reliable */
+  transition: color 0.2s ease;
+}
+
+
+
+/* On small screens → stack */
+@media (max-width: 768px) {
+  .project-box {
+    flex: 1 1 100%;
+  }
+}
+
+.projtitle {
+  transition: all 0.2s ease;
+   position: relative;
+  z-index: 5;
+}
+
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.expand-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  color: #37bfec; /* your blue */
+  line-height: 1;
+}
+
+.expand-btn:hover {
+  background: rgba(55, 191, 236, 0.12);
+  transform: scale(1.07);
+}
+
+/* expandable section hidden by default */
+.project-expand {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.35s ease;
+  text-align: justify;
+}
+
+/* expanded state */
+.project-box.expanded .project-expand {
+  max-height: 600px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+
+/* rotate arrow when expanded */
+.project-box.expanded .expand-btn {
+  transform: rotate(180deg);
+}
+
+.project-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  position: relative;
+}
+
+.project-main {
+  flex: 1;
+}
+
+/* Arrow button */
+.expand-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  color: #37bfec;
+  line-height: 1;
+}
+
+.expand-btn:hover {
+  background: rgba(55, 191, 236, 0.12);
+  transform: scale(1.07);
+}
+
+/* Expand area hidden by default */
+.project-expand {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.35s ease;
+  margin-top: 0;
+}
+
+/* Expanded state */
+.project-box.expanded .project-expand {
+  max-height: 800px;
+  opacity: 1;
+  margin-top: 14px;
+}
+
+/* Rotate arrow when expanded */
+.project-box.expanded .expand-btn {
+  transform: rotate(180deg);
+}
+.projects-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start; /* ✅ key change */
+}
+
+
+
+.project-box {
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.project-box:hover {
+  transform: scale(1.01);
 }

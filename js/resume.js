@@ -26,3 +26,31 @@
   });
 
 })(jQuery); // End of use strict
+
+
+function toggleCard(card) {
+  // Optional: close all other cards when one opens:
+  document.querySelectorAll(".project-card").forEach(c => {
+    if (c !== card) c.classList.remove("expanded");
+  });
+
+  card.classList.toggle("expanded");
+}
+
+function toggleProject(event, btn) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  const card = btn.closest(".project-box");
+  card.classList.toggle("expanded");
+}
+
+window.toggleProject = function(event, btn) {
+  event.preventDefault();
+  event.stopPropagation();
+  const card = btn.closest(".project-box");
+  console.log('jbt')
+  card.classList.toggle("expanded");
+}
+
+
