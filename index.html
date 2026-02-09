@@ -258,16 +258,15 @@
                         <ul class="fa-ul mb-2">
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Built a temporally consistent FOV estimation model from scratch, achieving improved performance over previously used models.
-                                Independently led this project for ~80% of its duration.
+                                Independently led ~80% of the end-to-end development of a production Field of View (FOV) estimation model, from data collection to deployment.
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Created a comprehensive dataset using 360-degree videos, extracting 5–10 images per frame with varied FOV, roll, pitch, and yaw parameters.
+                                Designed and built a custom data generation pipeline from 360-degree videos, extracting 5–10 images per frame with systematically varied FOV, roll, pitch, and yaw.
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Developed and executed training scripts, experimenting with different backbones and regression heads to optimize model accuracy.
+                                Implemented training and evaluation pipelines from scratch, experimenting with multiple backbones (ResNet, ViT) and regression heads.
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
@@ -275,11 +274,23 @@
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Improved initial models by iteratively refining datasets and addressing issues such as blur dependency, leading to successful deployment in production.
+                                Identified a blur-related shortcut failure, where the model predicted smaller FOVs for blurrier inputs instead of learning true FOV geometry.
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Explored a new temporal FOV approach using two models together, focusing on temporal consistency and designing an appropriate loss function.
+                                Mitigated this issue through a major redesign of datasets, training, and evaluation, including higher-resolution data, increased scene diversity, in- and out-of-distribution splits, uncertainty-aware regression heads, and alternative fine-tuning strategies.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Integrated synthetic data generated in Unreal Engine and proposed a structured temporal evaluation protocol using gradual zoom sequences, which enabled more reliable temporal consistency analysis and parameter tuning.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Explored temporal FOV estimation approaches by coupling two models and designing temporal consistency losses to improve frame-to-frame stability without degrading single-frame accuracy.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Achieved ~16% performance improvement over the previously deployed model, leading to successful production deployment and usage at scale through Autodesk tools.
                             </li>
                         </ul>
 
@@ -757,10 +768,16 @@
 
                         <p>
                             <strong>Description:</strong>
-                            Project in progress as part of the MVA <em>ALTEGRAD</em> course.
-                            We are building a molecular graph-to-text captioning model using a
-                            GNN encoder and Transformer decoder to generate natural language
-                            descriptions from molecular structures.
+                            Worked on a multimodal molecular graph captioning project aimed at generating 
+                            natural language descriptions from atom- and bond-level molecular graphs. 
+                            We first designed a two-stage training pipeline consisting of (1)
+                             contrastive alignment between graph and text representations 
+                            and (2) prefix-tuning of a large language model conditioned on graph embeddings.
+                            In the first stage, built a GINE-based graph encoder and trained it to align graph representations with frozen LLaMA text embeddings using a weighted InfoNCE objective on mean- and std-pooled embeddings, which significantly improved cross-modal retrieval performance (MRR@5 from 0.10 to 0.92). In the second stage, we injected graph information into the language model via a special placeholder token whose embedding was replaced with graph embeddings during prefix-tuning.
+
+                            Then, we conducted extensive ablation studies comparing instruction tuning vs. supervised fine-tuning, multiple graph encoder training strategies, and full LLM fine-tuning vs. LoRA tuning. Results showed that instruction tuning with a contrastively pretrained, frozen graph encoder consistently outperformed other configurations, and that full fine-tuning was superior to LoRA.
+
+                            In the end, we explored two re-ranking strategies based on (1) graph–caption similarity using the contrastive model and (2) re-ranking with a stronger instruction-tuned LLM. However, neither approach improved performance over direct generation. The best configuration achieved a test score of 0.637 using a 1B LLaMA model with instruction tuning. Finally, we documented the methodology and findings in a research-style report.
                         </p>
                     </div>
                 </div>
