@@ -80,14 +80,14 @@
                    Nemanja <span class="text-primary"> Vujadinović</span>
                 </h1>
                 <div class="subheading mb-5">
-                    <i class="fa-solid fa-location-dot"></i> Novi Sad, Serbia |
+                    <i class="fa-solid fa-location-dot"></i> Paris, France / Novi Sad, Serbia |
                     <i class="fa-solid fa-envelope"></i> <a href="mailto:vujadinovic01@gmail.com">vujadinovic01@gmail.com</a>
                 </div>
                 <div class="about-wrapper mx-auto" style="max-width: 1020px;">
         <p class="mb-0" style="text-align: justify; text-justify: inter-word;">
-                    Hello! I'm a Master’s student in the MVA program at ENS Paris-Saclay, currently based in France. 
+                    Hello! I recently completed my Master’s degree in the MVA program at ENS Paris-Saclay, France. 
                     I completed my Bachelor’s degree in Software Engineering at the University of Novi Sad, Serbia. 
-                    I also have 2 years of experience working in Machine Learning for (3D) Computer Vision.<br>
+                    I also have 2.5 years of experience working in Machine Learning for (3D) Computer Vision.<br>
                     My main interests lie in 3D Computer Vision, geometric deep learning and 3D shape analysis, and 
                     neural rendering techniques (NeRFs). I am also interested in Natural Language Processing, especially 
                     where it intersects with other scientific fields-e.g., multimodal learning and vision–language models.<br>
@@ -100,8 +100,8 @@
                         <i class="fa fa-briefcase"></i>
                     </div> -->
                     <div class="text">
-                        <strong>Open to Research Internship opportunities in:</strong><br>
-                        Machine Learning • Deep Learning • (3D) Computer Vision • Geometric ML • 3D Shape Analysis • Neural Rendering • NLP • Multimodal AI
+                        <strong>Open to ML Research and Engineering opportunities in:</strong><br>
+                        Machine Learning • Deep Learning • (3D) Computer Vision • Geometric ML • 3D Shape Analysis • Neural Rendering • Multimodal AI
                     </div>
                 </div>
             </div>
@@ -140,76 +140,70 @@
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
             <div class="my-auto">
                 <h2 class="mb-5">Experience</h2>
-                <!-- EXPERIENCE DISABLED. Inner comments were changed from html-comment markers to tilde markers (grep for the tilde ones) to restore them.
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
                         <div class="d-flex align-items-start">
-                            <!~~ Add the image element here ~~>
+                            <div class="project-image-wrapper">
+                                <img src="img/idemia.png" style="object-fit: contain;" alt="Project Image" class="project-image">
+                            </div>
+                            <div>
+                                <h3 class="mb-0">Research intern</h3>
+                                <div class="subheading mb-3">IDEMIA Public Security</div>
+                            </div>
+                        </div>
+
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Introduced a zero-shot multi-camera pipeline for luggage size estimation from airport camera videos, built on SAM3 tracking and 3D reconstruction using MoGe-2 and UniDepth-V2 models, reaching a 1.98cm average per-dimension error.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Proved that local registration methods (ICP; FPFH/FCGF &amp; TEASER++) fail on symmetric clouds, and adopted GeoTransformer.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Implemented a luggage-adapted OBB fitting method for size estimation that outperformed PCA-OBB and mOBB baselines.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Developed a T-junction method to detect occluded frames, and convexity-based mask processing to remove luggage handles.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Started training UniDepth-V2 ViT-S model in a depth-only regime on a dataset subset, improving the results by small margin.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Apr 2026 – Oct 2026</span>
+                    </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <div class="d-flex align-items-start">
                             <div class="project-image-wrapper">
                                 <img src="img/onesec.jpeg" style="object-fit: contain;" alt="Project Image" class="project-image">
                             </div>
                             <div>
                                 <h3 class="mb-0">Machine learning engineer</h3>
-                                <div class="subheading mb-3">OneSecondDelivery Inc</div>
+                                <div class="subheading mb-3">OneSecondDelivery Sarl</div>
                             </div>
                         </div>
-                        
-                        <b>Foundation Model Training and Label Generation</b>
-                        <ul class="fa-ul mb-2">
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Adapted, analyzed, and used SOTA depth estimation and semantic segmentation models to generate high-quality pseudo-labels for training.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Designed an input-output foundation pipeline that combines RGB images with ~100+ channels of segmentation logits, depth maps, and synthetic stereo data.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Built a pre-training framework using a ConvNeXt-based student–teacher setup for drone path planning and obstacle avoidance in autonomous food delivery.
-                            </li>
-                            <!~~ <li> ~~>
-                                <!~~ <i class="fa-li fa fa-check"></i> ~~>
-                                <!~~ Improved model performance by replacing ResNet with a customized ConvNeXt architecture. ~~>
-                            <!~~ </li> ~~>
-                        </ul>
 
-                        <b>Synthetic Data Generation & Inpainting</b>
-                        <ul class="fa-ul mb-2">
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Generated large-scale synthetic stereo datasets by combining central RGB frames with depth maps to simulate left–right drone camera views.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Used multiple depth estimation models (Apple metric model, Depth Anything v2) and custom fusion strategies to stabilize depth scaling for improved stereo simulation.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                            </li>
-                            <!~~ <li> ~~>
-                                <!~~ <i class="fa-li fa fa-check"></i> ~~>
-                                <!~~ Evaluated and adapted LaMa, DeepFill v2, and diffusion-based models for inpainting occluded regions caused by pixel displacements. ~~>
-                            <!~~ </li> ~~>
-                            <!~~ <li> ~~>
-                                <!~~ <i class="fa-li fa fa-check"></i> ~~>
-                                <!~~ Designed, trained, and iteratively refined several CycleGAN-based inpainting architectures from scratch, achieving more realistic and consistent results on synthetic data than previously used SOTA models. ~~>
-                            <!~~ </li> ~~>
-                        </ul>
-
-                        <b>MLOps & Cloud Deployment</b>
                         <ul class="fa-ul mb-0">
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Set up and maintained an MLOps infrastructure on Google Cloud for model experimentation and data preprocessing using VertexAI and Compute Engine.
+                                Built and trained a multi-task ConvNeXt-UNet for depth estimation and segmentation on 100M+ images for drone navigation.
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Designed and managed concurrent runs of depth and segmentation models for large-scale label generation, reducing processing time by ~35%.
+                                Analyzed and adapted DepthAnythingV2, Apple DepthPro, and OneFormer models to generate pseudo-labels for training.
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Performed small-scale training and evaluation experiments to validate system stability and optimize model throughput.
+                                Implemented a 3D-warping stereo NVS pipeline, with LaMa, CycleGAN, and depth-guided disocclusion inpainting methods.
                             </li>
                         </ul>
                     </div>
@@ -221,94 +215,34 @@
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
                         <div class="d-flex align-items-start">
-                            <!~~ Add the image element here ~~>
                             <div class="project-image-wrapper">
-                                <img src="img/wonder.png" alt="Project Image" style="object-fit: cover;" class="project-image">
+                                <img src="img/wonder.png" style="object-fit: cover;" alt="Project Image" class="project-image">
                             </div>
                             <div>
                                 <h3 class="mb-0">Machine learning intern/engineer</h3>
                                 <div class="subheading mb-3">Wonder Dynamics</div>
                             </div>
                         </div>
-                        
-                        <b>Depth Estimation</b>
-                        <ul class="fa-ul mb-2">
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Analyzed, processed, and annotated image and video data to create high-quality datasets for depth estimation.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Utilized COLMAP to generate ground truth depth values for images that were missing them.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Researched methods for extending single-frame depth estimation models to temporal models while maintaining low inference time.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Experimented with using optical flow to estimate and refine depth.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Focused on running and testing different models and adjusting the code to find the best balance between speed and accuracy.
-                            </li>
-                        </ul>
 
-                        <b>Field of View (FOV) Estimation</b>
-                        <ul class="fa-ul mb-2">
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Independently led ~80% of the end-to-end development of a production Field of View (FOV) estimation model, from data collection to deployment.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Designed and built a custom data generation pipeline from 360-degree videos, extracting 5–10 images per frame with systematically varied FOV, roll, pitch, and yaw.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Implemented training and evaluation pipelines from scratch, experimenting with multiple backbones (ResNet, ViT) and regression heads.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Conducted evaluations on test images from both in-distribution and out-of-distribution datasets to ensure generalizability for production use.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Identified a blur-related shortcut failure, where the model predicted smaller FOVs for blurrier inputs instead of learning true FOV geometry.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Mitigated this issue through a major redesign of datasets, training, and evaluation, including higher-resolution data, increased scene diversity, in- and out-of-distribution splits, uncertainty-aware regression heads, and alternative fine-tuning strategies.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Integrated synthetic data generated in Unreal Engine and proposed a structured temporal evaluation protocol using gradual zoom sequences, which enabled more reliable temporal consistency analysis and parameter tuning.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Explored temporal FOV estimation approaches by coupling two models and designing temporal consistency losses to improve frame-to-frame stability without degrading single-frame accuracy.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i>
-                                Achieved ~16% performance improvement over the previously deployed model, leading to successful production deployment and usage at scale through Autodesk tools.
-                            </li>
-                        </ul>
-
-                        <b>Additional Research and Development</b>
                         <ul class="fa-ul mb-0">
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Engaged in camera trajectory analysis, developing a trajectory comparison tool using Python and Blender to enhance motion understanding.
+                                Built a production FOV and roll, pitch, yaw estimation model that surpassed the accuracy of two legacy-baseline models.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Created datasets from the internet, real-world, and Unreal 360° videos and auto-annotated them with FOV/pose labels.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Designed training and evaluation pipelines, experimenting with various backbones (ResNet/DINOv2) and regression heads.
                             </li>
                         </ul>
-
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">Sep 2023 – July 2024</span>
+                        <span class="text-primary">Sep 2023 – Jul 2024</span>
                     </div>
                 </div>
-                -->
             </section>
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
@@ -736,6 +670,135 @@
                 margin-bottom: 15px !important;
                 margin-top: 48px !important;
                 color: #868e96;">AI &amp; Machine learning</h3>
+                <!-- Histopathology OOD Classification -->
+                <div class="resume-item project-box d-flex flex-column mb-5">
+                    <div class="project-top">
+                        <div class="project-image-wrapper">
+                            <img src="img/nn.jpg" style="object-fit: cover;" alt="Project Image" class="project-image">
+                        </div>
+                        <div class="project-main">
+                            <h3 class="mb-0 projtitle">
+                                Histopathology OOD Classification
+                            </h3>
+                            <div class="subheading mb-2">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/histopathology-OOD-classification">
+                                    www.histopathology-ood.com
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="subheading mb-2">
+                                <span class="text-primary">mar 2026 - apr 2026</span>
+                            </div>
+                            <!-- Arrow toggle -->
+                            <button class="expand-btn" type="button" style="float: right;">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-expand">
+                        <p style="margin-bottom: 5px;">
+                            <strong>Tech stack:</strong> Python, PyTorch, LaTeX
+                        </p>
+
+                        <p>
+                            <strong>Description:</strong>
+                            Worked on the MVA DLMI 2026 histopathology data challenge: binary tumor vs. non-tumor classification of image patches under acquisition-center shift, where validation and test patches come from medical centers never seen in training.
+                            Starting from the course baseline (frozen DINOv2 + linear probe), we built a modular experimental pipeline in which every idea is a registered, swappable solution, so all results can be compared under the same protocol.
+                            Increasing the input resolution from 98×98 to 224×224 and adding stain-aware augmentation (scale and shift in optical-density space) raised test accuracy from 0.906 to 0.934, while generic RGB color jitter did not help.
+                            Then, we injected LoRA layers into the attention blocks of the ViT backbone with two-stage training (linear head first, then warm-started LoRA fine-tuning), reaching 0.969. Class-conditional CORAL alignment across centers and Reinhard normalization gave no consistent gain over this.
+                            Our best model, a LoRA-adapted pathology foundation model (UNI, ViT-L/16) with stain augmentation and Reinhard normalization, reached 0.971 test accuracy on the public leaderboard. Finally, we documented the methodology and ablations in a research-style report.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zero-Shot MRI Super-Resolution -->
+                <div class="resume-item project-box d-flex flex-column mb-5">
+                    <div class="project-top">
+                        <div class="project-image-wrapper">
+                            <img src="img/bida.png" style="object-fit: contain;" alt="Project Image" class="project-image">
+                        </div>
+                        <div class="project-main">
+                            <h3 class="mb-0 projtitle">
+                                Zero-Shot MRI Super-Resolution
+                            </h3>
+                            <div class="subheading mb-2">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/bida-sr">
+                                    www.bida-sr.com
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="subheading mb-2">
+                                <span class="text-primary">feb 2026 - mar 2026</span>
+                            </div>
+                            <!-- Arrow toggle -->
+                            <button class="expand-btn" type="button" style="float: right;">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-expand">
+                        <p style="margin-bottom: 5px;">
+                            <strong>Tech stack:</strong> Python, PyTorch, LaTeX
+                        </p>
+
+                        <p>
+                            <strong>Description:</strong>
+                            Reproduced the core ideas of <em>"Exploring the feasibility of zero-shot super-resolution in preclinical imaging" (Gharib et al., 2024)</em> for through-plane super-resolution of rodent brain MRI under limited compute.
+                            We implemented the full pipeline: MRI preprocessing (RAS reorientation, N4 bias correction, isotropic resampling), unconditional DDPM training on axial and sagittal HR slices, and inference with DDIM + DDNM to enforce data consistency with a Gaussian blur and subsampling degradation model.
+                            The two biplanar reconstructions are then averaged, as in Biplanar Diffusion Averaging (BiDA).
+                            We evaluated against a cubic interpolation baseline on a held-out rat split and on mouse data as true out-of-distribution, using PSNR, SSIM, and MAE with paired Wilcoxon tests.
+                            BiDA improved PSNR on both sets and produced sharper, anatomically plausible details, while interpolation kept higher SSIM and lower MAE, consistent with the perception-distortion trade-off. Finally, we summarized the work in a report and a poster.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3DETR: Review, Reproduction and Extensions -->
+                <div class="resume-item project-box d-flex flex-column mb-5">
+                    <div class="project-top">
+                        <div class="project-image-wrapper">
+                            <img src="img/mesh.png" style="object-fit: contain;" alt="Project Image" class="project-image">
+                        </div>
+                        <div class="project-main">
+                            <h3 class="mb-0 projtitle">
+                                3DETR: Review, Reproduction and Extensions
+                            </h3>
+                            <div class="subheading mb-2">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/vujadinovicn/3DETR">
+                                    www.3detr-review.com
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="subheading mb-2">
+                                <span class="text-primary">jan 2026 - mar 2026</span>
+                            </div>
+                            <!-- Arrow toggle -->
+                            <button class="expand-btn" type="button" style="float: right;">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-expand">
+                        <p style="margin-bottom: 5px;">
+                            <strong>Tech stack:</strong> Python, PyTorch, LaTeX
+                        </p>
+
+                        <p>
+                            <strong>Description:</strong>
+                            Reviewed and reproduced the paper <em>"An End-to-End Transformer Model for 3D Object Detection" (Misra et al., ICCV 2021)</em> on top of the official code.
+                            We reproduced 3DETR and 3DETR-m on ScanNetV2 within 1.2 AP25 of the reported numbers, and confirmed the claim that set-based matching makes the model robust to the absence of NMS (60.82 vs. 61.69 AP25, while VoteNet collapses from 58.27 to 9.76).
+                            Moreover, we re-implemented analyses missing from the official repository: a number-of-queries sweep showing that 3DETR needs at least 256 queries to match VoteNet and is slower at every setting, and ModelNet40 classification with the 3DETR encoder (89.8 overall accuracy).
+                            Lastly, we added two analyses beyond the paper: recall as a function of object size and point count, revealing a sharp drop on small objects, and visualization of decoder cross-attention, showing that queries do not attend locally.
+                            Finally, we documented the findings and failure modes in a research-style report.
+                        </p>
+                    </div>
+                </div>
+
                 <!-- altegrad -->
                 <div class="resume-item project-box d-flex flex-column mb-5">
                     <div class="project-top">
